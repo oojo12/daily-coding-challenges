@@ -9,4 +9,16 @@ def find_target_word(mat, target):
                 return True
             if col_words[col] == target:
                 return True
+    return False
     
+ mat = [['F', 'A', 'C', 'I'],
+ ['O', 'B', 'Q', 'P'],
+ ['A', 'N', 'O', 'B'],
+ ['M', 'A', 'S', 'S']]
+
+assert True == find_target_word(mat, 'MAS')
+assert True == find_target_word(mat, 'MASS')
+assert True == find_target_word(mat, 'FACI')
+assert True == find_target_word(mat, 'CQ')
+assert True == find_target_word(mat, 'A')
+assert True == find_target_word(mat, 'ABNA')
